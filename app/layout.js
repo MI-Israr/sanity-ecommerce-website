@@ -8,8 +8,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <StateContext>
-          <Toaster />
-          <Layout>{children}</Layout>
+          <Layout>
+            <Toaster />
+            {children}
+          </Layout>
         </StateContext>
       </body>
     </html>
